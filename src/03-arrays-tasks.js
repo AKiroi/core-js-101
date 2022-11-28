@@ -235,7 +235,7 @@ function toArrayOfSquares(arr) {
  */
 function getMovingSum(arr) {
   return arr.reduce((acc, item, idx) => {
-    if(idx) {
+    if (idx) {
       acc.push(item + acc[idx - 1]);
     } else {
       acc.push(item);
@@ -310,7 +310,7 @@ function get3TopItems(arr) {
  *   [ null, 1, 'elephant' ] => 1
  *   [ 1, '2' ] => 1
  */
- function getPositivesCount(arr) {
+function getPositivesCount(arr) {
   return arr.reduce((acc, item) => (typeof item === 'number' && item > 0 ? acc + 1 : acc), 0);
 }
 
